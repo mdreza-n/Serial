@@ -112,6 +112,7 @@ h1 {
 .modal-header {
     display: flex;
     justify-content: space-between;
+    width: 100%;
     align-items: center;
     border-bottom: 1px solid #888;
     padding-bottom: 10px;
@@ -120,9 +121,6 @@ h1 {
 
 .modal-header h2 {
     margin: 0;
-    flex-grow: 1;
-    text-align: left;
-    margin-right: 20px; /* ایجاد فاصله بین عنوان فیلم و دکمه‌ها */
 }
 
 .modal-buttons {
@@ -131,6 +129,25 @@ h1 {
     justify-content: center;
     width: 100%;
 }
+
+.close {
+    color: #aaa;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    background-color: #555;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.close:hover,
+.close:focus {
+    color: white;
+    background-color: #666;
+}
+
 .button-link {
     display: block;
     margin: 10px;
@@ -147,7 +164,8 @@ h1 {
 .button-link:hover {
     background-color: #45a049;
 }
-.sort-button, .close {
+
+.sort-button {
     padding: 10px 20px;
     background-color: #555;
     color: #fff;
@@ -155,10 +173,8 @@ h1 {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    width: 100px; /* تنظیم عرض یکسان برای دکمه‌ها */
-    margin-left: 10px; /* فاصله بین دکمه‌ها */
+    margin-bottom: 20px;
 }
-
-.sort-button:hover, .close:hover {
+.sort-button:hover {
     background-color: #666;
 }
