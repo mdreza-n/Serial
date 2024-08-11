@@ -112,7 +112,6 @@ h1 {
 .modal-header {
     display: flex;
     justify-content: space-between;
-    width: 100%;
     align-items: center;
     border-bottom: 1px solid #888;
     padding-bottom: 10px;
@@ -121,6 +120,9 @@ h1 {
 
 .modal-header h2 {
     margin: 0;
+    flex-grow: 1;
+    text-align: left;
+    margin-right: 20px; /* ایجاد فاصله بین عنوان فیلم و دکمه‌ها */
 }
 
 .modal-buttons {
